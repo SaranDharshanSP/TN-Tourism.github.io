@@ -1,0 +1,218 @@
+.header {
+  background-color: #333333;
+  padding: 10px 20px;
+}
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  align-items: center;
+  margin: 10px;
+  color: #ffffff;
+  height: 75px; /* Adjust the height as desired */
+}
+
+.logo {
+  font-family: 'New Century Schoolbook', 'TeX Gyre Schola', serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  margin-left: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar a:first-child {
+  margin-left: auto; /* Align the first link to the right */
+}
+
+
+/* about */
+#about {
+    width: 100%;
+    padding:  1rem 175px ;
+  }
+  
+  #about_us .about {
+  
+    font-size: 1.5rem;
+    width:100%;
+    text-align: justify;
+    margin:100px;
+    align-items:center;
+  }
+
+  #about_us div {
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 5px;
+    position: relative;
+  }
+  
+  #about_us .about{
+    display:flex;
+  }
+  
+  #about_us div span {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    opacity: 0;
+    left: 80%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: 1s;
+  }
+  
+  #about_us p {
+    width: 43em;
+    color: white;
+    text-align: justify;
+    padding-top: 14em;
+    font-family: "Work Sans", sans-serif;
+    margin-left: 6em;
+  }
+  
+  #about_us p::first-letter {
+    padding-left: 47px;
+    font-size: 55px;
+    color: #fc036b;
+  }
+
+.wrapper{
+        margin: 0px;
+        padding:100px;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    .one, .two, .three{
+        display: flex;
+        gap: 60px 30px;
+        border-bottom: 50px;
+        font-size: 2rem;
+    }
+    .image1 {
+      background-image: url("img1.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 2%;
+      font-size: 2rem;
+      width: 3000px;
+      height: 300px;
+    }
+    
+    .image2 {
+      background-image: url("img2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 2%;
+      width: 2000px;
+      height: 400px;
+    }
+    
+    .image3 {
+      background-image: url("img3.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 2%;
+      width: 3000px;
+      height: 400px;
+    }
+    
+    .content {
+      font-size: 1.5rem;
+      margin: auto 30px;
+    }
+    
+
+    /* carousel */
+
+    @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+
+    input[type=radio] {
+    display: none;
+    }
+
+    .cardt {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 5vw;
+    right: 0;
+    top: 14%;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+    }
+
+    .containerx {
+    width: 100%;
+    height: 50vh;
+    transform-style: preserve-3d;
+    }
+
+    .cards {
+    position: relative;
+    width: 100vh;
+    height: 100%;
+    }
+
+    .cards label img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    }
+
+    #item-1:checked ~ .cards #col-img-3, #item-2:checked ~ .cards #col-img-1, #item-3:checked ~ .cards #col-img-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+    }
+
+    #item-1:checked ~ .cards #col-img-2, #item-2:checked ~ .cards #col-img-3, #item-3:checked ~ .cards #col-img-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+    }
+
+    #item-1:checked ~ .cards #col-img-1, #item-2:checked ~ .cards #col-img-2, #item-3:checked ~ .cards #col-img-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    
+    img {
+        box-shadow: 0px 0px 5px 0px rgba(139, 15, 15, 0.47);
+    }
+    }
+
+    #item-2:checked ~ .player #test {
+    transform: translateY(0);
+    }
+
+    #item-2:checked ~ .player #test  {
+    transform: translateY(-40px);
+    }
+
+    #item-3:checked ~ .player #test  {
+    transform: translateY(-80px);
+    }
+
+    .about .title{
+    padding: auto;
+    justify-content: center;
+    }

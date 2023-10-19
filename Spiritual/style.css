@@ -1,0 +1,239 @@
+.header {
+  background-color: whitesmoke;
+  padding: 10px 20px;
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@600&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: darkblue;
+  height: 75px; /* Adjust the height as desired */
+}
+
+.logo {
+  font-family: 'Poppins', 'TeX Gyre Schola', serif;
+  font-size: 1.8rem;
+  color:black;
+  text-transform: lowercase;
+  letter-spacing: 0.4rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  margin-left: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a:first-child {
+  margin-left: auto; /* Align the first link to the right */
+}
+
+
+/* about */
+#about {
+    width: 100%;
+    padding: 100px 1rem 10px ;
+  }
+  
+  #about_us .about {
+  
+    font-size: 1.5rem;
+    width:100%;
+    text-align: justify;
+    margin:100px;
+    align-items:center;
+  }
+  
+  
+  #about_us div {
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 5px;
+    position: relative;
+  }
+  
+  #about_us .about{
+    display:flex;
+  }
+  
+  #about_us div span {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    opacity: 0;
+    left: 80%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: 1s;
+  }
+  
+  #about_us p {
+    width: 43em;
+    color: white;
+    text-align: justify;
+    padding-top: 14em;
+    font-family: "Poppins", sans-serif;
+    margin-left: 6em;
+  }
+  
+  #about_us p::first-letter {
+    padding-left: 47px;
+    font-size: 55px;
+    color: #fc036b;
+  }
+
+.wrapper{
+        margin: 0px;
+        padding:100px;
+    }
+    .one, .two, .three,.four,.five{
+        display: flex;
+        gap: 60px 30px;
+    }
+    .image1{
+        background-image: url("avk.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-style:outset;
+        border-radius:25px;
+        width:1000px;
+        height:300px;
+        opacity: 1;
+
+    }
+    .image2{
+        background-image: url("brh.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-style:outset;
+        border-radius:25px;
+        width:1000px;
+        height:300px;
+        opacity: 1;
+    }
+
+    .image3{
+        background-image: url("vka.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-style:outset;
+        border-radius:25px;
+        width:1000px;
+        height:300px;
+        opacity: 1;
+    }
+
+    .image4{
+        background-image: url("pan.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-style:outset;
+        border-radius:25px;
+        width:1000px;
+        height:300px;
+        opacity: 1;
+    }
+
+    .image5{
+        background-image: url("mpt.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-style:outset;
+        border-radius:25px;
+        width:1000px;
+        height:300px;
+        opacity: 1;
+    }
+
+
+    .content{
+        font-size: 1rem;
+        margin: auto 30px;
+    }
+
+
+  
+
+    /* carousel */
+
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Tiro+Tamil&display=swap');
+
+
+
+    input[type=radio] {
+    display: none;
+    }
+
+    .cardt {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 5vw;
+    right: 0;
+    top: 14%;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+    }
+
+    .containerx {
+    width: 100%;
+    height: 50vh;
+    transform-style: preserve-3d;
+    }
+
+    .cards {
+    position: relative;
+    width: 100vh;
+    height: 100%;
+    }
+
+    .cards label img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    }
+
+    #item-1:checked ~ .cards #col-img-3, #item-2:checked ~ .cards #col-img-1, #item-3:checked ~ .cards #col-img-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+    }
+
+    #item-1:checked ~ .cards #col-img-2, #item-2:checked ~ .cards #col-img-3, #item-3:checked ~ .cards #col-img-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+    }
+
+    #item-1:checked ~ .cards #col-img-1, #item-2:checked ~ .cards #col-img-2, #item-3:checked ~ .cards #col-img-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    
+    img {
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+    }
+
+    #item-2:checked ~ .player #test {
+    transform: translateY(0);
+    }
+
+    #item-2:checked ~ .player #test  {
+    transform: translateY(-40px);
+    }
+
+    #item-3:checked ~ .player #test  {
+    transform: translateY(-80px);
+    }
