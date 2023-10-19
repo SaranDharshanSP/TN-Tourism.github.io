@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>off the beaten path</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@600&display=swap');
+    .correct {
+      color: green;
+      
+    }
+
+    .incorrect {
+      color: red;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .feedback {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
+    <!--navbar-->
+    <nav class="navbar glass" style="height: 70px;">
+        <span><a href="#home" style="display:flex; align-items: center;"><img class="img2" src="./img/logo_smaller.png" width="50"
+            style=" color: #000;" ><h1 class="logo" style="font-family: Poppins;text-transform: lowercase">&nbsp;off the beaten பாதை</h1></a></span>
+        <ul class="nav-links">
+            <li><a href="#home" id="pri" class="active cir_border" style="font-family: Poppins;>Home</a></li>
+            <li><a href="C:\UID\UI\zigzag\zigzag\Food.html" id="sec" class="cir_border" target="_blank" style="font-family: Poppins;"">Food</a></li>
+            <li><a href="C:\UID\UI\Culture\Culture.html" id="tri" class="cir_border" style="font-family: Poppins;"">Culture</a></li>
+            <li><a href="C:\UID\UI\history\History.html" id="quad" class="cir_border" target="_blank" style="font-family: Poppins;">History</a></li>
+            <li><a href="C:\UID\UI\Spiritual\Spiritual.html" id="quint" class="cir_border" style="font-family: Poppins;">Spiritual</a></li>
+            <li><a href="#contact" id="hex" class="cir_border" style="font-family: Poppins;">Contact</a></li>
+            <li><div>
+                <input type="checkbox" class="checkbox dark" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fa fa-moon-o"></i>
+                <i class='fa fa-sun-o'></i>
+                <div class='ball'>
+            </label>
+            </div></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--navbar-->
+    <header id="home">
+        <div class="header-content">
+            <div class="main">
+            <h2  id="quote" style="font:Poppins;">Explore the colourful Tamil Nadu</h2>
+            <div class="line"></div>
+                <h1>வணக்கம் to Tamil Nadu</h1>
+        </div>
+        </div></div>
+    </header>
+    <!--Events-->
+    <section class="events" id="events">
+        <div class="container">
+        <div class="title">
+            <h1 class="dark">HIGHLIGHTS</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <article class="card col">
+                <img class="card-img" src="./img/i1.png">
+                <h4 class="dark">FOOD</h4>
+                <p class="font-color">A fun road trip for your tastebuds!</p>
+                <a href="C:\UID\UI\zigzag\zigzag\Food.html" class="ctn">All Details</a>
+            </article>
+            <article class="card col">
+                <img src="./img/i3.jpg">
+                <h4 class="dark">HISTORY</h4>
+                <p class="font-color">A quick glance into our past.</p>
+                <a href="C:\UID\UI\history\History.html" class="ctn">All Details</a>
+            </article>
+            <article class="card col">
+                <img src="./img/i8.jpg">
+                <h4 class="dark">CULTURE</h4>
+                <p class="font-color">A quick glance into our present.</p>
+                <a href="C:\UID\UI\Culture\Culture.html" class="ctn">All Details</a>
+            </article>
+            <article class="card col">
+                <img src="./img/i6.jpg">
+                <h4 class="dark">SPIRITUAL</h4>
+                <p class="font-color">A short glimpse into the Land of temples.</p>
+                <a href="C:\Users\sudha\OneDrive\Documents\UID ENDSEM\Spiritual\Spiritual.html" class="ctn">All Details</a>
+            </article>
+        </div>
+    </div>
+    </section>
+    <!--Events-->
+    <!-- About -->
+    <section id="about">
+        <div class="title">
+            <h1 class="font-color">travel tamil nadu</h1>
+            <div class="line">
+            </div>
+        </div>
+        <br>
+        <div id="about_us">
+            <div class="boxx">
+                <div class="containerx">
+					<input type="radio" name="slider" id="item-1" checked>
+					<input type="radio" name="slider" id="item-2">
+					<input type="radio" name="slider" id="item-3">
+				<div class="cards">
+					<label class="cardt" for="item-1" id="col-img-1">
+					<img src="./img/c1.jpg">
+					</label>
+					<label class="cardt" for="item-2" id="col-img-2">
+					<img src="./img/c2.jpg">
+					</label>
+					<label class="cardt" for="item-3" id="col-img-3">
+					<img src="./img/c3.jpg">
+					</label>
+				</div>
+				</div>
+                <div class="about">
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+        <!--Explore-->
+        <section class="explore" id="explore" >
+            <div class="explore-content">
+                <h1 style="font:Poppins;text-transform:italic">explore tamil nadu</h1>
+                <div class="line"></div>
+                  <form name="Quiz" onsubmit="return score()">
+    <label for="q1" style="font-family: Poppins;">This is the district that is almost synonymous with halwa!  </label>
+    <input type="text" name="q1" id="q1" class="input-box"><br>
+
+    <label for="q2" style="font-family: Poppins;">India's first sea-bridge is located near this ghost town.  </label>
+    <input type="text" name="q2" id="q2" class="input-box"><br>
+
+    <label for="q4" style="font-family: Poppins;">The world's fourth oldest dam structure that is still in use today.  </label>
+    <input type="text" name="q4" id="q4" class="input-box"><br>
+
+    <label for="q5" style="font-family: Poppins;">This fort was ranked as the most impregnable fortress by Shivaji, and the "Troy of the East" by the British.  </label>
+    <input type="text" name="q5" id="q5" class="input-box"><br>
+
+    <label for="q6" style="font-family: Poppins;">This city is believed to be the birthplace of the prolific poet and philosopher Thiruvalluvar.   </label>
+    <input type="text" name="q6" id="q6" class="input-box"><br><br>
+
+    <input type="submit" value="Let's go">
+  </form>
+
+  <div id="feedbackContainer"></div>
+
+  <script>
+    function score() {
+      const form = document.forms['Quiz'];
+
+      // Reset error styles
+      const errorFields = form.getElementsByClassName('error');
+      for (let i = 0; i < errorFields.length; i++) {
+        errorFields[i].classList.remove('error');
+      }
+
+      
+      const inputFields = form.getElementsByClassName('input-box');
+      for (let i = 0; i < inputFields.length; i++) {
+        inputFields[i].classList.remove('correct', 'incorrect');
+      }
+
+      let isValid = true;
+
+    
+      const q1Input = form.elements['q1'];
+      const q1Value = q1Input.value.trim().toLowerCase();
+      if (q1Value !== 'tirunelveli') {
+        isValid = false;
+        q1Input.classList.add('incorrect');
+        q1Input.value = `Tirunelveli (Correct answer: tirunelveli)`;
+      } else {
+        q1Input.classList.add('correct');
+      }
+
+      const q2Input = form.elements['q2'];
+      const q2Value = q2Input.value.trim().toLowerCase();
+      if (q2Value !== 'dhanushkodi') {
+        isValid = false;
+        q2Input.classList.add('incorrect');
+        q2Input.value = `Dhanushkodi (Correct answer: dhanushkodi)`;
+      } else {
+        q2Input.classList.add('correct');
+      }
+
+      
+      const q3Input = form.elements['q4'];
+      const q3Value = q3Input.value.trim().toLowerCase();
+      if (q3Value !== 'kallanai') {
+        isValid = false;
+        q3Input.classList.add('incorrect');
+        q3Input.value = `Kallanai (Correct answer: kallanai)`;
+      } else {
+        q3Input.classList.add('correct');
+      }
+
+      
+      const q4Input = form.elements['q5'];
+      const q4Value = q4Input.value.trim().toLowerCase();
+      if (q4Value !== 'gingee fort' && q4Value !== 'senji fort') {
+        isValid = false;
+        q4Input.classList.add('incorrect');
+        q4Input.value = `Gingee Fort or Senji Fort (Correct answers: gingee fort or senji fort)`;
+      } else {
+        q4Input.classList.add('correct');
+      }
+
+      
+      const q5Input = form.elements['q6'];
+      const q5Value = q5Input.value.trim().toLowerCase();
+      if (q5Value !== 'chennai' && q5Value !== 'mylapore') {
+        isValid = false;
+        q5Input.classList.add('incorrect');
+        q5Input.value = `Chennai or Mylapore (Correct answers: chennai or mylapore)`;
+      } else {
+        q5Input.classList.add('correct');
+      }
+
+      const feedbackContainer = document.getElementById('feedbackContainer');
+
+      if (isValid) {
+        const successMessage = document.createElement('p');
+        successMessage.textContent = 'Congratulations! You answered all the questions correctly.';
+        feedbackContainer.appendChild(successMessage);
+        form.reset(); // Reset the form
+      } else {
+        const errorMessage = document.createElement('p');
+        errorMessage.textContent = 'You have so much to discover about Tamil Nadu';
+        feedbackContainer.appendChild(errorMessage);
+      }
+
+      return false; // Prevent form submission
+    }
+  </script>
+                
+            </div>
+        </section>
+    <!--Explore-->
+    <!-- contact -->
+    <section id="contact">
+        <div class="title">
+            <h1 class="font-color">Contact Us</h1>
+            <div class="line"></div>
+        </div>
+        <div class="contact_us">
+            <form class="cform" action="" method="post">
+                <div class="crow-message">
+                    <h1 class="color">Send us a message</h1>
+                    <div></div>
+                </div>
+                <div class="crow-in">
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <input type="text" id="email" name="email" placeholder="Your Email id">
+                </div>
+                <div class="crow">
+                    <div class="ccol-left">
+                        <select name="country" id="country">
+                            <option value="India">India</option>
+                            <option value="Russia">Russia</option>
+                            <option value="usa">USA</option>
+                            <option value="Japan">Japan</option>
+                            <option value="France">France</option>
+                            <option value="Brazil">Brazil</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="crow">
+                    <div class="ccol-left">
+                        <textarea type="text" id="remarks" name="remarks" placeholder="Your Remarks....." style="height: 150px;"></textarea>
+                    </div>
+                </div>
+                <input class="crow-s" type="submit" value="Submit">
+            </form>
+            <div class="cbox">
+                <div>
+                    <p class="cbox-message">Prefer some other way ?<br>Reach us by using the details given below</p>
+                <div class="cbox-line"></div>
+                </div>
+                <div class="c_boxx">
+                    <a href="mailto:abc@gmail.com"><i class="fa fa-envelope"></i>
+                        Mail: shinisoba@gmail.com , sarandharshan7090@gmail.com
+                    </a>
+                </div>
+                <div class="c_boxx">
+                    <a href="tel:+91-12345-67890"><i class="fa fa-phone"></i>
+                        Phone: (+91) 12345-67890
+                    </a>
+                </div>
+                <div class="c_boxx">
+                    <a href="#"><i class="fa fa-map-marker"></i>
+                        Location: Coimbatore & Cuddalore , TamilNadu, India
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact  -->
+    <!-- up scroll -->
+    <i class="fa fa-chevron-up" onclick="topFunction()" id="upbtn"></i>
+    <!-- end -->
+    <!--footer-->
+    <section class="footer">
+        <span>Made by Saran and Subhashini.</span>
+        <div class="social">
+            <li>
+                <a href="https://github.com/SaranDharshanSP" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/saran-dharshan-687392267/" target="_blank" rel="noreferrer"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://github.com/shinisoba" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/subhashini-sudhakar-48aa21256/" target="_blank" rel="noreferrer"><i class="fa fa-linkedin-square"></i></a>
+            </li>
+        </div>
+    </section>
+    <!--footer-->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
