@@ -169,6 +169,20 @@
   #about_us div {
     left: -10px;
   }
+  .explore-content h1 {
+    font-size: 1.5rem;
+  }
+  .explore-content label {
+    font-size: 12px;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    padding: 8px;
+  }
+  .explore-content .line {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 400px) {
   .ctn {
