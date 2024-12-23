@@ -141,6 +141,34 @@
   .c_boxx a p {
     font-size: 17.5px;
   }
+  #home {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .img2 {
+    position: relative;
+    left: -80px;
+    top: -5px;
+  }
+  .logo {
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    padding: 0 0.6rem;
+    margin-left: 10px;
+  }
+  .menu-btn {
+    width: 20px;
+  }
+  .header-content{
+    margin-bottom: -30px;
+  }
+  .header-content .main {
+    left: -30px;
+  }
+  #about_us div {
+    left: -10px;
+  }
 }
 @media screen and (max-width: 400px) {
   .ctn {
