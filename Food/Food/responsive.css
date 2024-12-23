@@ -1,0 +1,16 @@
+@media screen and (max-width: 470px) {
+    .img2 {
+        /* position: relative;
+        left: -80px;
+        top: -5px; */
+    }
+    .logo {
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+        padding: 0 0.6rem;
+        margin-left: 10px;
+    }
+    .navbar a{
+        font-size: 20px;
+    }
+}
