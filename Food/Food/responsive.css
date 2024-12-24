@@ -23,7 +23,7 @@
     }
 
     #about .font-color{
-        font-size: 150px !important;
+        font-size: 150px;
     }
 
     .cards{
@@ -34,7 +34,7 @@
 
     #about_us .about{
         width: 150%;
-        font-size: 100px !important;
+        font-size: 100px ;
     }
 
     .two{
