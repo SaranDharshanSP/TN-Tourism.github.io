@@ -165,22 +165,20 @@
   <script>
     function score() {
       const form = document.forms['Quiz'];
-
+  
       // Reset error styles
       const errorFields = form.getElementsByClassName('error');
       for (let i = 0; i < errorFields.length; i++) {
         errorFields[i].classList.remove('error');
       }
-
-      
+  
       const inputFields = form.getElementsByClassName('input-box');
       for (let i = 0; i < inputFields.length; i++) {
         inputFields[i].classList.remove('correct', 'incorrect');
       }
-
+  
       let isValid = true;
-
-    
+  
       const q1Input = form.elements['q1'];
       const q1Value = q1Input.value.trim().toLowerCase();
       if (q1Value !== 'tirunelveli') {
@@ -190,7 +188,7 @@
       } else {
         q1Input.classList.add('correct');
       }
-
+  
       const q2Input = form.elements['q2'];
       const q2Value = q2Input.value.trim().toLowerCase();
       if (q2Value !== 'dhanushkodi') {
@@ -200,8 +198,7 @@
       } else {
         q2Input.classList.add('correct');
       }
-
-      
+  
       const q3Input = form.elements['q4'];
       const q3Value = q3Input.value.trim().toLowerCase();
       if (q3Value !== 'kallanai') {
@@ -211,8 +208,7 @@
       } else {
         q3Input.classList.add('correct');
       }
-
-      
+  
       const q4Input = form.elements['q5'];
       const q4Value = q4Input.value.trim().toLowerCase();
       if (q4Value !== 'gingee fort' && q4Value !== 'senji fort') {
@@ -222,8 +218,7 @@
       } else {
         q4Input.classList.add('correct');
       }
-
-      
+  
       const q5Input = form.elements['q6'];
       const q5Value = q5Input.value.trim().toLowerCase();
       if (q5Value !== 'chennai' && q5Value !== 'mylapore') {
@@ -233,23 +228,30 @@
       } else {
         q5Input.classList.add('correct');
       }
-
+  
       const feedbackContainer = document.getElementById('feedbackContainer');
-
+      feedbackContainer.innerHTML = ''; // Clear existing messages
+  
       if (isValid) {
         const successMessage = document.createElement('p');
-        successMessage.textContent = 'Congratulations! You answered all the questions correctly.';
+        successMessage.textContent =
+          'Congratulations! You answered all the questions correctly.';
         feedbackContainer.appendChild(successMessage);
         form.reset(); // Reset the form
       } else {
-        const errorMessage = document.createElement('p');
-        errorMessage.textContent = 'You have so much to discover about Tamil Nadu';
-        feedbackContainer.appendChild(errorMessage);
+        if (!document.getElementById('errorMessage')) {
+          const errorMessage = document.createElement('p');
+          errorMessage.id = 'errorMessage';
+          errorMessage.textContent =
+            'You have so much to discover about Tamil Nadu';
+          feedbackContainer.appendChild(errorMessage);
+        }
       }
-
+  
       return false; // Prevent form submission
     }
   </script>
+  
                 
             </div>
         </section>
