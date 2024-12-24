@@ -3,11 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
 
-@im
-
-
-
-
 /* Root element (aka html) */
 :root {
   box-sizing: border-box;
@@ -46,7 +41,7 @@ ul {
   list-style: none;
 }
 
-span {
+.navbar span {
   color: #7c7c7c;
   padding: 0px 40px;
 }
@@ -58,10 +53,14 @@ span {
   font-weight: bold;
 } */
 
+/* added padding and margin */
+
 body,
 html {
   overflow-x: hidden;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -87,6 +86,8 @@ html {
 
 /* Navbar */
 
+
+/* changed navbar css */
 .navbar {
   position: fixed;
   top: 0;
@@ -94,22 +95,36 @@ html {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: saturate(180%) blur(10px);
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 5px;
+  padding: 12px 20px;
   z-index: 10;
   color: whitesmoke;
 }
 
+/* added logo_cont css */
+
+.logo_cont{
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  font-family: 'New Century Schoolbook', 'TeX Gyre Schola', serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
-  padding: 0 1.2rem;
   font-weight: 300;
   color: rgb(254, 252, 252); 
+}
+
+.nav_link_cont{
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -125,6 +140,14 @@ html {
 .nav-links li a {
   color: white;
   cursor: pointer;
+}
+
+.men_cont{
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cir_border {
@@ -189,11 +212,15 @@ header {
   color: whitesmoke;
 }
 
+.menu_cont{
+  display: none;
+}
+
 .menu-btn {
-  position: absolute;
+  /* position: absolute;
   top: 30px;
   right: 30px;
-  width: 40px;
+  width: 40px; */
   cursor: pointer;
   display: none;
 }
@@ -858,5 +885,4 @@ input[type=radio] {
 #item-3:checked ~ .player #test  {
   transform: translateY(-80px);
 }
-
 /* end */
