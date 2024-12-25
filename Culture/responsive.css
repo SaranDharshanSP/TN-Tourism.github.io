@@ -1,4 +1,8 @@
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 770px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
     header{
         width: 90%;
     }
@@ -13,7 +17,7 @@
     }
 
     .navbar a{
-        margin-left: 80px;
+        margin-left: 220px;
     }
 
     .img2{
@@ -26,7 +30,7 @@
     }
 
     #about_us{
-        width: 58%;
+        width: 76%;
         margin-left: -15px;
     }
 
@@ -35,26 +39,30 @@
     }
 
     .cards{
-        width: 54vw;
-        height: 60%;
-        margin-left: -40px;
+        width: 70vw;
+        height: 65%;
+        margin-left: -20px;
         margin-top: -250px;
     }
 
     #about_us .about{
-        width: 50vw;
-        margin-left: 5px;
+        width: 65vw;
+        margin-left: 25px;
         margin-top: -100px;
         margin-bottom: 0px;
     }
 
     .wrapper{
         margin-left: -100px;
-        width: 440px;
+        width: 600px;
     }
 
     .one, .two, .three,.four,.five{
         flex-direction: column;
+    }
+
+    .wrapper h2{
+        text-align: center;
     }
 
     .image1,
@@ -62,12 +70,16 @@
     .image3,
     .image4,
     .image5{
-        width: 408px;
-        margin-left: -10px;
+        width: 508px;
+        margin-left: 20px;
     }
 }
 
 @media screen and (max-width: 470px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
     .logo {
         font-size: 12px;
         letter-spacing: 0.2rem;
@@ -75,6 +87,7 @@
     
     .navbar a{
         font-size: 20px;
+        margin-left: 35px;
     }
 
     #about_us{
@@ -102,5 +115,6 @@
     .image4,
     .image5{
         width: 313px;
+        margin-left: -10px;
     }
 }
