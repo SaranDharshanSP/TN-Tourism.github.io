@@ -92,22 +92,27 @@
     }
 
     #about_us{
-        width: 100%;
+        width: 95%;
+        margin-left: -2%;
     }
 
     .cards{
         width: 85vw;
         height: 60%;
-        margin-left: -20px;
+        margin-left: -30px;
         margin-top: -180px;
     }
 
     #about_us .about{
-        width: 80vw;
+        margin-left: 0;
     }
 
     .wrapper{
-        width: 345px;
+        width: 80%;
+    }
+
+    .one, .two, .three,.four,.five{
+        margin-left: -22.5%;
     }
 
     .image1,
@@ -115,7 +120,12 @@
     .image3,
     .image4,
     .image5{
-        width: 313px;
+        width: 105%;
         margin-left: -10px;
+    }
+
+    .content{
+        margin-left: 0px;
+        width: 105%;
     }
 }
