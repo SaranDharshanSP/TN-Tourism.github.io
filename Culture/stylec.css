@@ -1,5 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@600&display=swap');
+/* removed padding and margin */
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
 
 .header {
   background-color: whitesmoke;
@@ -14,15 +26,46 @@
   height: 75px; 
 }
 
-.logo {
-  font-family: 'Poppins', 'TeX Gyre Schola', serif;
-  font-size: 1.8rem;
-  color:black;
-  text-transform: lowercase;
-  letter-spacing: 0.4rem;
-  padding: 0;
-  margin: 0;
+/* changed navbar css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: saturate(180%) blur(10px);
+  display: flex;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  color: whitesmoke;
 }
+
+
+.logo {
+  font-family: 'poppins',sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+  /* padding: 0 1.2rem; */
+  font-weight: 100;
+  color: rgb(254, 252, 252); 
+}
+
+@media only screen and (max-width: 1245px) {
+  .logo {
+      font-size: 16px;
+  }
+}
+
+.logo_cont{
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
 
 .navbar a {
   margin-left: 10px;
