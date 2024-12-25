@@ -1,11 +1,150 @@
+@media screen and (max-width: 770px) {
+    .navbar a{
+        font-size: 30px;
+    }
+
+    #about h1{
+        font-size: 40px;
+    }
+
+    #about_us div{
+        grid-template-columns: none;
+    }
+
+    #about{
+        width: 93vw;
+    }
+
+    .cards{
+        width: 90%;
+        height: 65%;
+        margin-left: -.1%;
+        margin-top: -250px;
+    }
+
+    #about_us .about{
+        width: 90%;
+        margin-left: 4%;
+        margin-top: -100px;
+        margin-bottom: 0px;
+        font-size: 30px;
+    }
+
+    .wrapper{
+        margin-left: -10.5%;
+        width: 95%;
+    }
+
+    .one, .two, .three,.four,.five{
+        flex-direction: column;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5{
+        width: 93%;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .content{
+        font-size: 2rem;
+    }
+
+    .content h2, .content h3{
+        text-align: center;
+    }
+}   
+
+
 @media screen and (max-width: 470px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
     .logo {
         font-size: 0.8rem;
         letter-spacing: 0.2rem;
         padding: 0 0.6rem;
-        margin-left: 10px;
+        margin-left: -10px;
     }
     .navbar a{
         font-size: 20px;
+    }
+
+    #about h1{
+        font-size: 20px;
+    }
+
+    #about_us{
+        width: 93vw;
+        margin-left: -3%;
+        padding-bottom: 0;
+    }
+
+    #about_us div{
+        grid-template-columns: none;
+    }
+
+    #about_us .about{
+        margin-left: -10px;
+        margin-top: 30px;
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .cards{
+        height: 90%;
+        width: 85vw;
+        margin-top: -50px;
+        margin-left: -25px;
+    }
+
+    .wrapper{
+        width: 100%;
+        margin-left: -29%;
+    }
+
+    .one, .two, .three{
+        flex-direction: column;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5{
+        width: 82vw;
+        height: 200px;
+        margin-left: 0;
+    }
+
+    .content{
+        width: 82vw;
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+    .content._4 p, .content._4 h2, .content._4 h3, .content._5 h2, .content._5 h3, .content._5 p{
+        display: flex;
+        width: 85vw;
+    }
+
+    .m{
+        margin-left: 100px;
+    }
+
+    .h{
+        margin-left: 120px;
+    }
+
+    .n{
+        margin-left: 85px;
+    }
+    
+    .content h2, .content h3{
+        text-align: center;
     }
 }
