@@ -1,31 +1,68 @@
-.header {
-  background-color: #333333;
-  padding: 10px 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300&display=swap');
+
+
 html {
   max-width: 100%;
   overflow-x: hidden;
 }
 
+/* removed padding and margin */
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
-  font-weight: bolder;
   align-items: center;
-  margin: 10px;
-  color: #ffffff;
-  height: 75px; /* Adjust the height as desired */
+  color: darkblue;
+  height: 75px; 
 }
 
-.logo {
-  font-family: 'New Century Schoolbook', 'TeX Gyre Schola', serif;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  padding: 0;
-  margin: 0;
+/* changed navbar css */
+.navbar {
+
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: saturate(180%) blur(10px);
+  display: flex;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  color: whitesmoke;
 }
+
+
+.logo {
+  font-family: 'poppins',sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+  /* padding: 0 1.2rem; */
+  font-weight: 100;
+  color: rgb(254, 252, 252); 
+}
+
+@media only screen and (max-width: 1245px) {
+  .logo {
+      font-size: 16px;
+  }
+}
+
+.logo_cont{
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 
 .navbar a {
   margin-left: 10px;
