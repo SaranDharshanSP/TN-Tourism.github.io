@@ -233,6 +233,7 @@
 
   .menu-btn {
     width: 20px;
+    z-index: 1000;
   }
 
   .header-content{
