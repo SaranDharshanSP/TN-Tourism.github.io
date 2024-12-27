@@ -10,6 +10,15 @@
   .logo_cont{
     width: fit-content;
   }
+
+  .navbar span{
+    padding: 0 0;
+  }
+
+  .navbar h1{
+    margin-left: 0px;
+  }
+
   .navbar a{
     gap: 4px;
     height: 100%;
@@ -28,12 +37,13 @@
   .nav-links {
     position: absolute;
     flex-direction: column;
-    width: 100px;
+    width: 300px;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-around;
     background: #484872;
     margin-top: -1150px;
     transition: all 0.5s ease;
+    left: 400px;
   }
 
   .nav-links a{
@@ -49,9 +59,9 @@
     margin-top: 80px;
   }
 
-
   .menu-btn{
     display: block;
+    width: 50px;
   }
 
   .logo{
@@ -83,12 +93,6 @@
     margin: auto;
     margin-bottom: 30px;
   }
-
-  .img2{
-    position: relative;
-    left: -80px;
-  }
-
   .logo {
     margin-left: 10px;
     font-size: 1.5rem;
@@ -213,12 +217,6 @@
     font-size: 15px;
   }
 
-  .img2 {
-    position: relative;
-    left: -80px;
-    top: -5px;
-  }
-
   .logo {
     font-size: 0.8rem;
     letter-spacing: 0.2rem;
@@ -228,6 +226,8 @@
 
   .mobile-menu {
     margin-top: 502px;
+    left: 150px;
+    width: 200px;
     border-bottom-right-radius: 30%;
   }
 
@@ -240,7 +240,7 @@
   }
 
   .header-content .main {
-    left: -50px;
+    left: -30px;
   }
 
   #about_us div {

@@ -4,7 +4,8 @@
     }
 
     header{
-        width: 97%;
+        width: 99%;
+        margin-left: 0.5%;
     }
 
     .logo{
@@ -19,7 +20,8 @@
     }
 
     .navbar a{
-        margin-left: 39%;
+        margin-left: 45%;
+        font-size: 30px;
     }
 
     .header .navbar .img2{
@@ -84,9 +86,14 @@
         margin-left: 10px;
         margin-top: 0;
     }
+
+    .header{
+        margin-left: 1%;
+    }
+
     .navbar a{
         font-size: 20px;
-        margin-left: 8%;
+        margin-left: 30%;
     }
 
     .header .navbar .img2{

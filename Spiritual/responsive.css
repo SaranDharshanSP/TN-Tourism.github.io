@@ -16,7 +16,7 @@
 
     #about{
         width: 93vw;
-        margin-left: 6%;
+        margin-left: 2%;
     }
 
     .cards{
@@ -35,7 +35,7 @@
     }
 
     .wrapper{
-        margin-left: -5%;
+        margin-left: -10%;
         width: 95%;
     }
 
@@ -83,7 +83,7 @@
     }
 
     #about{
-        margin-left: -5%;
+        margin-left: 1%;
     }
 
     #about h1{
@@ -116,7 +116,7 @@
 
     .wrapper{
         width: 100%;
-        margin-left: -32.5%;
+        margin-left: -28.25%;
     }
 
     .one, .two, .three{

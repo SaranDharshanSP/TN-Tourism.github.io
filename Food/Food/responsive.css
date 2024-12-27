@@ -11,6 +11,14 @@
         width: 50px;
     }
 
+    .font-color{
+        margin-left: -30px;
+    }
+
+    #about{
+        margin-left: 30px;
+    }
+
     .cards{
         width: 90vw;
         height: 100;
@@ -69,6 +77,15 @@
         width: 500px;
         margin-left: 75px;
     }
+
+    .image1 p,
+    .image2 p,
+    .image3 p,
+    .image4 p,
+    .image5 p{
+        height: 300px;
+        width: 500px;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -90,17 +107,18 @@
         grid-template-columns: none;
     }
 
+    #about{
+        margin-left: 0px;
+    }
+
     #about_us .about{
-        margin-left: -10px;
-        margin-top: -100px;
         width: 90%;
     }
 
     .cards{
         height: 100%;
         width: 90vw;
-        margin-top: -350px;
-        margin-left: -45px;
+        margin-left: -35px;
     }
 
     .wrapper{
@@ -119,23 +137,16 @@
         margin-left: -80px;
     }
 
-    .two{
-        margin-top: -50px;
+    .image1 p,
+    .image2 p,
+    .image3 p,
+    .image4 p,
+    .image5 p{
+        height: 200px;
+        width: 300px;
     }
 
-    .three{
-        margin-top: -120px;
-    }
-
-    .four{
-        margin-top: -220px;
-    }
-
-    .five{
-        margin-top: -150px;
-    }
-
-    .image1,
+    .wrapper .one .image1,
     .image2,
     .image3,
     .image4,
@@ -143,7 +154,7 @@
         height: 200px;
         width: 300px;
         margin-top: 10px;
-        margin-left: -20px;
+        margin-left: 10px;
     }
 
     .content1,
@@ -151,9 +162,8 @@
     .content3,
     .content4,
     .content5{
-        width: 150%;
+        width: 140%;
         display: flex;
-        margin-top: 1px;
         margin-left: -15px;
     }
 
