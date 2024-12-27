@@ -1,4 +1,7 @@
 @media screen and (max-width: 770px) {
+    .header{
+        width: 105%;
+    }
     .navbar a{
         font-size: 30px;
     }
@@ -13,6 +16,7 @@
 
     #about{
         width: 93vw;
+        margin-left: 6%;
     }
 
     .cards{
@@ -31,7 +35,7 @@
     }
 
     .wrapper{
-        margin-left: -10.5%;
+        margin-left: -5%;
         width: 95%;
     }
 
@@ -64,6 +68,10 @@
         overflow-x: hidden;
     }
 
+    .header{
+        width: unset;
+    }
+
     .logo {
         font-size: 0.8rem;
         letter-spacing: 0.2rem;
@@ -72,6 +80,10 @@
     }
     .navbar a{
         font-size: 20px;
+    }
+
+    #about{
+        margin-left: -5%;
     }
 
     #about h1{
@@ -104,7 +116,7 @@
 
     .wrapper{
         width: 100%;
-        margin-left: -29%;
+        margin-left: -32.5%;
     }
 
     .one, .two, .three{

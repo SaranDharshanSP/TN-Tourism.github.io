@@ -142,7 +142,8 @@
     .image5{
         height: 200px;
         width: 300px;
-        margin-left: 5px;
+        margin-top: 10px;
+        margin-left: -20px;
     }
 
     .content1,
