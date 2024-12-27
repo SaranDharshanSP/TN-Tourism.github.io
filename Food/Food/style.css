@@ -1,6 +1,11 @@
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300&display=swap');
+
 body {
   background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 div {
@@ -12,31 +17,53 @@ div {
   margin: auto 30px;
 }
 
-/* Header */
-.header {
-  background-color: #333333;
-  padding: 10px 20px;
-}
-
 .navbar {
   display: flex;
-  margin: 10px;
   justify-content: space-between;
   align-items: center;
-  color: #ffffff;
-  height: 75px;
-  font-size: 1.5rem;
-  font-weight: bolder;
+  color: darkblue;
+  height: 75px; 
 }
 
-.logo {
-  font-family: 'New Century Schoolbook', 'TeX Gyre Schola', serif;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  padding: 0;
-  margin: 0;
+/* changed navbar css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: saturate(180%) blur(10px);
+  display: flex;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  color: whitesmoke;
 }
+
+
+.logo {
+  font-family: 'poppins',sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+  /* padding: 0 1.2rem; */
+  font-weight: 100;
+  color: rgb(254, 252, 252); 
+}
+
+@media only screen and (max-width: 1245px) {
+  .logo {
+      font-size: 16px;
+  }
+}
+
+.logo_cont{
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 
 .navbar a {
   margin-left: 10px;
@@ -158,7 +185,7 @@ div {
 /* Carousel Section */
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
-input[type=radio] {
+input[type="radio"] {
   display: none;
 }
 
@@ -170,7 +197,7 @@ input[type=radio] {
   right: 0;
   top: 14%;
   margin: auto;
-  transition: transform 0.4s ease;
+  transition: transform 1s ease, opacity 1s ease, z-index 0.5s ease;
   cursor: pointer;
 }
 
@@ -178,11 +205,12 @@ input[type=radio] {
   width: 100%;
   height: 50vh;
   transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .cards {
   position: relative;
-  width: 100vh;
+  width: 200%;
   height: 100%;
 }
 
@@ -193,52 +221,74 @@ input[type=radio] {
   object-fit: cover;
 }
 
-#item-1:checked ~ .cards #col-img-4,
-#item-2:checked ~ .cards #col-img-5,
-#item-3:checked ~ .cards #col-img-1,
-#item-4:checked ~ .cards #col-img-2,
-#item-5:checked ~ .cards #col-img-3 {
-  transform: translatex(-40%) scale(0.8);
-  opacity: 0.4;
-  z-index: 0;
+#item-1:checked ~ .cards #col-img-1,
+#item-2:checked ~ .cards #col-img-2,
+#item-3:checked ~ .cards #col-img-3,
+#item-4:checked ~ .cards #col-img-4,
+#item-5:checked ~ .cards #col-img-5 {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 2;
+  transition: all 0.5s ease;
 }
 
-#item-1:checked ~ .cards #col-img-3,
-#item-2:checked ~ .cards #col-img-4,
-#item-3:checked ~ .cards #col-img-5,
-#item-4:checked ~ .cards #col-img-1,
-#item-5:checked ~ .cards #col-img-2 {
-  transform: translatex(40%) scale(0.8);
+/* this is to trac the left image */
+#item-1:checked ~ .cards #col-img-5,
+#item-2:checked ~ .cards #col-img-1,
+#item-3:checked ~ .cards #col-img-2,
+#item-4:checked ~ .cards #col-img-3,
+#item-5:checked ~ .cards #col-img-4 {
+  transform: translateX(-40%) scale(0.8); 
   opacity: 0.4;
   z-index: 0;
+  transition: all 0.5s ease;
 }
 
+/* tracks right img */ 
 #item-1:checked ~ .cards #col-img-2,
 #item-2:checked ~ .cards #col-img-3,
 #item-3:checked ~ .cards #col-img-4,
 #item-4:checked ~ .cards #col-img-5,
 #item-5:checked ~ .cards #col-img-1 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
+  transform: translateX(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
-#item-1:checked ~ .player #test {
-    transform: translateY(0);
-  } 
-
-#item-2:checked ~ .player #test {
-  transform: translateY(-40);
+/* This is used to hide all other images  */
+#item-1:checked ~ .cards #col-img-3,
+#item-1:checked ~ .cards #col-img-4,
+#item-2:checked ~ .cards #col-img-4,
+#item-2:checked ~ .cards #col-img-5,
+#item-3:checked ~ .cards #col-img-5,
+#item-3:checked ~ .cards #col-img-1,
+#item-4:checked ~ .cards #col-img-1,
+#item-4:checked ~ .cards #col-img-2,
+#item-5:checked ~ .cards #col-img-2,
+#item-5:checked ~ .cards #col-img-3 {
+  opacity: 0;
+  transform: translateX(0) scale(0);
+  z-index: -1;
+  transition: all 0.5s ease;
 }
 
-#item-3:checked ~ .player #test {
+#item-1:checked ~ .cardt #col-img-1 {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .cardt #col-img-2 {
+  transform: translateY(-40px);
+}
+
+#item-3:checked ~ .cardt #col-img-3 {
   transform: translateY(-80px);
 }
 
-#item-4:checked ~ .player #test {
+#item-4:checked ~ .cardt #col-img-4 {
   transform: translateY(-120px);
 }
 
-#item-5:checked ~ .player #test {
-  transform: translateY(-180px);
+#item-5:checked ~ .cardt #col-img-5 {
+  transform: translateY(-80px);
 }

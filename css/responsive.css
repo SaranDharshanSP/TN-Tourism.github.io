@@ -1,33 +1,34 @@
 /* mobile responsiveness design */
-@media screen and (max-width: 990px) {
-  .contact_us {
-    flex-direction: column;
-    width: 100%;
-  }
-  form,
-  .cbox {
-    margin: auto;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 1130px) {
-  .menu-btn {
-    display: block;
+
+
+/* resposive css for navbar */
+@media only screen and (max-width:1245px){
+  .navbar{
+    z-index: 999;
   }
 
-  .navbar {
-    padding: 45px;
+  .logo_cont{
+    width: fit-content;
+  }
+  .navbar a{
+    gap: 4px;
+    height: 100%;
+    align-items: center;
+    display: flex;
   }
 
-  .logo {
-    position: absolute;
-    top: 30px;
-    left: 15px;
+  .menu_cont{
+    display: flex;
+    height: 100%;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
   }
-
+  
   .nav-links {
+    position: absolute;
     flex-direction: column;
-    width: 100%;
+    width: 100px;
     height: 100vh;
     justify-content: center;
     background: #484872;
@@ -44,8 +45,43 @@
     border-bottom-right-radius: 30%;
   }
 
-  .nav-links li {
-    margin: 30px auto;
+  .mobile-menu li:first-child{
+    margin-top: 80px;
+  }
+
+
+  .menu-btn{
+    display: block;
+  }
+
+  .logo{
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width:480px){
+  .navbar{
+    padding: 12px 20px;
+  }
+  .logo{
+    letter-spacing: 3px;
+    font-size: 10px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+  .contact_us {
+    flex-direction: column;
+    width: 100%;
+  }
+  form,
+  .cbox {
+    margin: auto;
+    margin-bottom: 30px;
   }
 
   .img2{
@@ -61,6 +97,13 @@
   #about_us div {
     left: -5px;
   }
+}
+@media screen and (max-width: 1130px) {
+  .menu-btn {
+    display: flex;
+  }
+
+
 }
 
 @media screen and (max-width: 1440px) {
