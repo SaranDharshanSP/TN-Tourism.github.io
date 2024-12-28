@@ -85,6 +85,13 @@ a {
     width: 100%;
     padding: 100px 1rem 10px ;
   }
+
+  #about_us{
+    border-style:outset;
+    border-radius:25px;
+    background: ivory;
+    padding-bottom:90px;
+  }
   
   #about_us .about {
   

@@ -1,0 +1,128 @@
+@media screen and (max-width: 770px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
+    header{
+        margin-left: 2.5%;
+        width: 95%;
+    }
+
+    .logo{
+        font-size: 17px;
+        letter-spacing: 0.2rem;
+    }
+
+    .navbar{
+        justify-content: unset;
+    }
+
+    .navbar a{
+        margin-left: 52%;
+    }
+
+    .img2{
+        width: 50px;
+        margin-left: -30px;
+    }
+
+
+    #about_us{
+        width: 95%;
+        margin-left: 0px;
+    }
+
+    #about_us div{
+        grid-template-columns: none;
+    }
+
+    .cards{
+        width: 90%;
+        height: 65%;
+        margin-left: -.5%;
+        margin-top: -250px;
+    }
+
+    #about_us .about{
+        width: 90%;
+        margin-left: 12%;
+        margin-top: -100px;
+        margin-bottom: 0px;
+    }
+
+    .wrapper{
+        margin-left: -10.5%;
+        width: 95%;
+    }
+
+    .one, .two, .three,.four,.five{
+        flex-direction: column;
+    }
+
+    .wrapper h2{
+        text-align: center;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5{
+        width: 93%;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 12px;
+        letter-spacing: 0.2rem;
+    }
+    
+    .navbar a{
+        font-size: 20px;
+        margin-left: 48px;
+    }
+
+    #about_us{
+        width: 95%;
+        margin-left: -2%;
+    }
+
+    .cards{
+        width: 85vw;
+        height: 60%;
+        margin-left: -30px;
+        margin-top: -180px;
+    }
+
+    #about_us .about{
+        margin-left: 0;
+    }
+
+    .wrapper{
+        width: 80%;
+    }
+
+    .one, .two, .three,.four,.five{
+        margin-left: -22.5%;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5{
+        width: 105%;
+        margin-left: -10px;
+    }
+
+    .content{
+        margin-left: 0px;
+        width: 105%;
+    }
+}
