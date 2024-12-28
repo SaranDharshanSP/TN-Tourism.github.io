@@ -103,7 +103,7 @@
     }
 
     .title{
-        margin-left: -32%;
+        margin-left: -18%;
         font-size: xx-large;
     }
 
@@ -114,20 +114,21 @@
     .cards{
         width: 90vw;
         height: 60%;
-        margin-left: -30px;
+        margin-left: -20px;
         margin-top: -180px;
     }
 
     #about_us .about{
         width: 92vw;
         margin: 0;
-        margin-left: -5%;
+        margin-left: -1%;
         margin-top: -20%;
         font-size: 1.2rem;
     }
 
     .wrapper{
         width: 80%;
+        margin-left: 2%;
     }
 
     .one, .two, .three{
@@ -146,7 +147,7 @@
 
     .content{
         width: 93vw;
-        margin-left: -23.5%;
+        margin-left: -33%;
         font-size: 1.2rem;
     }
 }

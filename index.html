@@ -42,25 +42,39 @@
     onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
     <!--navbar-->
     <nav class="navbar glass" style="height: 70px;">
-        <span><a href="#home" style="display:flex; align-items: center;"><img class="img2" src="./img/logo_smaller.png" width="50"
-            style=" color: #000;" ><h1 class="logo" style="font-family: Poppins;text-transform: lowercase">&nbsp;off the beaten பாதை</h1></a></span>
-        <ul class="nav-links">
-            <li><a href="#home" id="pri" class="active cir_border" style="font-family: Poppins;">Home</a></li>
-            <li><a href="Food\Food\Food.html" id="sec" class="cir_border" style="font-family: Poppins;">Food</a></li>
-            <li><a href="Culture\Culture.html" id="tri" class="cir_border" style="font-family: Poppins;">Culture</a></li>
-            <li><a href="History\\History.html" id="quad" class="cir_border" style="font-family: Poppins;">History</a></li>
-            <li><a href="Spiritual\Spiritual.html" id="quint" class="cir_border" style="font-family: Poppins;">Spiritual</a></li>
-            <li><a href="#contact" id="hex" class="cir_border" style="font-family: Poppins;">Contact</a></li>
-            <li><div>
-                <input type="checkbox" class="checkbox dark" id="checkbox">
-            <label for="checkbox" class="label">
-                <i class="fa fa-moon-o"></i>
-                <i class='fa fa-sun-o'></i>
-                <div class='ball'>
-            </label>
-            </div></li>
-        </ul>
-        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        <div class="logo_cont">
+                <a href="#home" style="display:flex; align-items: center;">
+                    <img class="img2" src="./img/logo_smaller.png" width="50" style=" color: #000;">
+                    <h1 class="logo" style="font-family: Poppins;text-transform: lowercase">&nbsp;off the beaten பாதை</h1>
+                </a>
+        </div>
+        <div class="nav_link_cont">
+            <ul class="nav-links">
+                <li><a href="#home" id="pri" class="active cir_border" style="font-family: Poppins;">Home</a></li>
+                <li><a href="Food\Food\Food.html" id="sec" class="cir_border" style="font-family: Poppins;">Food</a></li>
+                <li><a href="Culture\Culture.html" id="tri" class="cir_border" style="font-family: Poppins;">Culture</a>
+                </li>
+                <li><a href="History\History.html" id="quad" class="cir_border" style="font-family: Poppins;">History</a>
+                </li>
+                <li><a href="Spiritual\Spiritual.html" id="quint" class="cir_border"
+                        style="font-family: Poppins;">Spiritual</a></li>
+                <li><a href="#contact" id="hex" class="cir_border" style="font-family: Poppins;">Contact</a></li>
+                <li>
+                    <div>
+                        <input type="checkbox" class="checkbox dark" id="checkbox">
+                        <label for="checkbox" class="label">
+                            <i class="fa fa-moon-o"></i>
+                            <i class='fa fa-sun-o'></i>
+                            <div class='ball'>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- added svg for better perfomance -->
+         <div class="menu_cont">
+            <svg xmlns="http://www.w3.org/2000/svg"  class="menu-btn" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+         </div>
     </nav>
     <!--navbar-->
     <header id="home">
