@@ -43,18 +43,20 @@
     <!--navbar-->
     <nav class="navbar glass" style="height: 70px;">
         <div class="logo_cont">
-                <a href="#home" style="display:flex; align-items: center;">
-                    <img class="img2" src="./img/logo_smaller.png" width="50" style=" color: #000;">
-                    <h1 class="logo" style="font-family: Poppins;text-transform: lowercase">&nbsp;off the beaten பாதை</h1>
-                </a>
+            <a href="#home" style="display:flex; align-items: center;">
+                <img class="img2" src="./img/logo_smaller.png" width="50" style=" color: #000;">
+                <h1 class="logo" style="font-family: Poppins;text-transform: lowercase">&nbsp;off the beaten பாதை</h1>
+            </a>
         </div>
         <div class="nav_link_cont">
             <ul class="nav-links">
                 <li><a href="#home" id="pri" class="active cir_border" style="font-family: Poppins;">Home</a></li>
-                <li><a href="Food\Food\Food.html" id="sec" class="cir_border" style="font-family: Poppins;">Food</a></li>
+                <li><a href="Food\Food\Food.html" id="sec" class="cir_border" style="font-family: Poppins;">Food</a>
+                </li>
                 <li><a href="Culture\Culture.html" id="tri" class="cir_border" style="font-family: Poppins;">Culture</a>
                 </li>
-                <li><a href="History\History.html" id="quad" class="cir_border" style="font-family: Poppins;">History</a>
+                <li><a href="History\History.html" id="quad" class="cir_border"
+                        style="font-family: Poppins;">History</a>
                 </li>
                 <li><a href="Spiritual\Spiritual.html" id="quint" class="cir_border"
                         style="font-family: Poppins;">Spiritual</a></li>
@@ -72,9 +74,12 @@
             </ul>
         </div>
         <!-- added svg for better perfomance -->
-         <div class="menu_cont">
-            <svg xmlns="http://www.w3.org/2000/svg"  class="menu-btn" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-         </div>
+        <div class="menu_cont">
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu-btn" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="#e8eaed">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </div>
     </nav>
     <!--navbar-->
     <header id="home">
@@ -159,36 +164,39 @@
     <!--Explore-->
     <section class="explore" id="explore">
         <div class="explore-content">
-            <h1 style="font:Poppins;text-transform:italic">explore tamil nadu</h1>
+            <h1 style="font:Poppins;text-transform:italic">Explore Tamil Nadu</h1>
             <div class="line"></div>
-            <form name="Quiz" onsubmit="return score()">
-                <label for="q1" style="font-family: Poppins;">This is the district that is almost synonymous with halwa!
-                </label>
+            <form name="Quiz" onsubmit="score(event)">
+                <label for="q1" style="font-family: Poppins;">This is the district that is almost synonymous with
+                    halwa!</label>
                 <input type="text" name="q1" id="q1" class="input-box"><br>
 
-                <label for="q2" style="font-family: Poppins;">India's first sea-bridge is located near this ghost town.
-                </label>
+                <label for="q2" style="font-family: Poppins;">India's first sea-bridge is located near this ghost
+                    town.</label>
                 <input type="text" name="q2" id="q2" class="input-box"><br>
 
-                <label for="q4" style="font-family: Poppins;">The world's fourth oldest dam structure that is still in
-                    use today. </label>
+                <label for="q3" style="font-family: Poppins;">The world's fourth oldest dam structure that is still in
+                    use today.</label>
+                <input type="text" name="q3" id="q3" class="input-box"><br>
+
+                <label for="q4" style="font-family: Poppins;">This fort was ranked as the most impregnable fortress by
+                    Shivaji, and the "Troy of the East" by the British.</label>
                 <input type="text" name="q4" id="q4" class="input-box"><br>
 
-                <label for="q5" style="font-family: Poppins;">This fort was ranked as the most impregnable fortress by
-                    Shivaji, and the "Troy of the East" by the British. </label>
-                <input type="text" name="q5" id="q5" class="input-box"><br>
-
-                <label for="q6" style="font-family: Poppins;">This city is believed to be the birthplace of the prolific
-                    poet and philosopher Thiruvalluvar. </label>
-                <input type="text" name="q6" id="q6" class="input-box"><br><br>
+                <label for="q5" style="font-family: Poppins;">This city is believed to be the birthplace of the prolific
+                    poet and philosopher Thiruvalluvar.</label>
+                <input type="text" name="q5" id="q5" class="input-box"><br><br>
 
                 <input type="submit" value="Let's go">
             </form>
 
+
             <div id="feedbackContainer"></div>
 
             <script>
-                function score() {
+                function score(event) {
+
+                    event.preventDefault();
                     const form = document.forms['Quiz'];
 
                     // Reset error styles
@@ -204,62 +212,45 @@
                     }
 
                     let isValid = true;
+                    let errorMessage = '';
 
+                    const questions = [
+                        { id: 'q1', correctAnswer: 'tirunelveli' },
+                        { id: 'q2', correctAnswer: 'dhanushkodi' },
+                        { id: 'q3', correctAnswer: 'kallanai' },
+                        { id: 'q4', correctAnswer: ['gingee fort', 'senji fort'] },
+                        { id: 'q5', correctAnswer: ['chennai', 'mylapore'] },
+                    ];
 
-                    const q1Input = form.elements['q1'];
-                    const q1Value = q1Input.value.trim().toLowerCase();
-                    if (q1Value !== 'tirunelveli') {
-                        isValid = false;
-                        q1Input.classList.add('incorrect');
-                        q1Input.value = `Tirunelveli (Correct answer: tirunelveli)`;
-                    } else {
-                        q1Input.classList.add('correct');
-                    }
+                    questions.forEach(q => {
+                        const input = form.elements[q.id];
+                        const value = input.value.trim().toLowerCase();
 
-                    const q2Input = form.elements['q2'];
-                    const q2Value = q2Input.value.trim().toLowerCase();
-                    if (q2Value !== 'dhanushkodi') {
-                        isValid = false;
-                        q2Input.classList.add('incorrect');
-                        q2Input.value = `Dhanushkodi (Correct answer: dhanushkodi)`;
-                    } else {
-                        q2Input.classList.add('correct');
-                    }
-
-
-                    const q3Input = form.elements['q4'];
-                    const q3Value = q3Input.value.trim().toLowerCase();
-                    if (q3Value !== 'kallanai') {
-                        isValid = false;
-                        q3Input.classList.add('incorrect');
-                        q3Input.value = `Kallanai (Correct answer: kallanai)`;
-                    } else {
-                        q3Input.classList.add('correct');
-                    }
-
-
-                    const q4Input = form.elements['q5'];
-                    const q4Value = q4Input.value.trim().toLowerCase();
-                    if (q4Value !== 'gingee fort' && q4Value !== 'senji fort') {
-                        isValid = false;
-                        q4Input.classList.add('incorrect');
-                        q4Input.value = `Gingee Fort or Senji Fort (Correct answers: gingee fort or senji fort)`;
-                    } else {
-                        q4Input.classList.add('correct');
-                    }
-
-
-                    const q5Input = form.elements['q6'];
-                    const q5Value = q5Input.value.trim().toLowerCase();
-                    if (q5Value !== 'chennai' && q5Value !== 'mylapore') {
-                        isValid = false;
-                        q5Input.classList.add('incorrect');
-                        q5Input.value = `Chennai or Mylapore (Correct answers: chennai or mylapore)`;
-                    } else {
-                        q5Input.classList.add('correct');
-                    }
+                        if (value === '') {
+                            isValid = false;
+                            input.classList.add('error');
+                            errorMessage = 'Please answer all questions.';
+                        } else if (Array.isArray(q.correctAnswer)) {
+                            if (!q.correctAnswer.includes(value)) {
+                                isValid = false;
+                                input.classList.add("incorrect");
+                                input.value = `${q.correctAnswer.join(' or ')} (Correct answers)`;
+                            } else {
+                                input.classList.add('correct')
+                            }
+                        } else if (value !== q.correctAnswer) {
+                            isValid = false;
+                            input.classList.add('incorrect');
+                            input.value = `${q.correctAnswer} (Correct answer)`;
+                        } else {
+                            input.classList.add('correct');
+                        }
+                    });
 
                     const feedbackContainer = document.getElementById('feedbackContainer');
+
+                    // Clears previous feedback
+                    feedbackContainer.innerHTML = '';
 
                     if (isValid) {
                         const successMessage = document.createElement('p');
@@ -267,12 +258,12 @@
                         feedbackContainer.appendChild(successMessage);
                         form.reset(); // Reset the form
                     } else {
-                        const errorMessage = document.createElement('p');
-                        errorMessage.textContent = 'You have so much to discover about Tamil Nadu';
-                        feedbackContainer.appendChild(errorMessage);
+                        const errorMsg = document.createElement('p');
+                        errorMsg.textContent = errorMessage || 'You have so much to discover about Tamil Nadu';
+                        feedbackContainer.appendChild(errorMsg);
                     }
 
-                    return false; // Prevent form submission
+                    return false;
                 }
             </script>
 
@@ -367,6 +358,50 @@
             navlinks.classList.toggle('mobile-menu')
         })
     </script>
+
+    <script>
+        document.querySelector(".cform").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const remarks = document.getElementById("remarks").value.trim();
+
+            const namePattern = /^[A-Za-z\s]+$/; // Allows only alphabets and spaces
+            if (name === "") {
+                alert("Name is required.");
+                document.getElementById("name").focus();
+                return;
+            } else if (!namePattern.test(name)) {
+                alert("Name should contain only alphabets.");
+                document.getElementById("name").focus();
+                return;
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (email === "") {
+                alert("Email is required.");
+                document.getElementById("email").focus();
+                return;
+            }
+            else if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                document.getElementById("email").focus();
+                return;
+            }
+
+            if (remarks === "") {
+                alert("Remarks cannot be empty.");
+                document.getElementById("remarks").focus();
+                return;
+            }
+
+            alert("Form submitted successfully!");
+            this.submit();
+        });
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/script.js"></script>
 </body>
